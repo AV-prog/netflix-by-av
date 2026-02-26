@@ -6,6 +6,7 @@
     scroll-behavior: smooth;
 }
 
+/*Navbar Section*/
 .navbar{
     position: absolute;
     top: 0;
@@ -67,14 +68,31 @@
     margin-top: 30px;
 }
 
+@media screen and (max-width: 480px) {
+    .button{
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .navbar_container{
+        padding: 0 20px;
+    }
+
+    .navbar_logo{
+        width: 150px;
+        height: 80px;
+        margin-top: 18px;
+    }
+}
+
 /* Hero Section */
 .hero {
     width: 100%;
     background: 
         linear-gradient(rgba(0, 0, 0, 0.8)), 
         url('../images/avengers-comic.jpg') no-repeat center center/cover;
-        position: relative;
-    padding: 150px 0;
+    position: relative;
+    padding: 120px 0;
 }
 
 .hero_container{
@@ -118,6 +136,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin: 20px auto;
 }
 
 #hero_input{
@@ -153,4 +172,59 @@ a{
     color: inherit;
     font-size: 23px;
     font-weight: bold;
+}
+
+.hero p{
+    width: 350px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero_heading{
+        font-size: 60px;
+        width: 600px;
+    }
+
+    .hero_description{
+        font-size: 25px;
+    }
+
+    .hero_invite{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero_heading{
+        font-size: 40px;
+        width: 450px;
+    }
+
+    .hero_description{
+        font-size: 20px;
+    }
+
+    .hero_invite{
+        font-size: 18px;
+    }
+
+    .get_started{
+        flex-direction: column;
+    }
+
+    #hero_input{
+        width: 300px;
+        margin-top: -10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hero_heading{
+        font-size: 40px;
+        width: 380px;
+    }
+
+    #hero_input{        
+        width: 280px;
+        margin-bottom: 10px;
+    }
 }
